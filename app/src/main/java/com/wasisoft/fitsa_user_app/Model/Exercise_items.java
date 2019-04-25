@@ -21,13 +21,13 @@ public class Exercise_items {
             this.mItemName = mItemName;
         }
 
-    public String getmItemDescription() {
+        public String getmItemDescription() {
         return mItemDescription;
     }
 
-    public void setmItemDescription(String mItemDescription) {
+        public void setmItemDescription(String mItemDescription) {
         this.mItemDescription = mItemDescription;
-    }
+        }
 
         public int getmItemImages() {
             return mItemImages;
@@ -36,7 +36,7 @@ public class Exercise_items {
         public void setmItemImages(int mItemImages) {
             this.mItemImages = mItemImages;
         }
-    }
+        }
 
 
 

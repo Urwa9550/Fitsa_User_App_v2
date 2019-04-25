@@ -5,4 +5,7 @@
     <color name="colorAccent">#D81B60</color>
     <color name="main_menu_2">#673AB7</color>
     <color name="main_menu">#c32e</color>
+    <color name="nutri_itemview">#234567</color>
+
+
 </resources>

@@ -1,6 +1,8 @@
 package com.wasisoft.fitsa_user_app.Adaptors;
 
+import android.app.DownloadManager;
 import android.content.Context;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -30,24 +32,27 @@ public class Nutritionist_adaptor  extends RecyclerView.Adapter<Nutritionist_ada
     @Override
     public Nutritionist_adaptor.MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
-        View view = LayoutInflater.from(mContext).inflate(R.layout.exercise_items,viewGroup, false);
-
-
+        View view = LayoutInflater.from(mContext).inflate(R.layout.nutritionist_items,viewGroup, false);
 
         Nutritionist_adaptor.MyViewHolder viewHolder = new Nutritionist_adaptor.MyViewHolder(view);
+
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Nutritionist_adaptor.MyViewHolder myViewHolder, int i) {
-        int imageID = mNutritionist_items.get(i).getmItemImages();
-        String title = mNutritionist_items.get(i).getmItemName();
+    public void onBindViewHolder(@NonNull Nutritionist_adaptor.MyViewHolder myViewHolder, int position) {
+
+        String title = mNutritionist_items.get(position).getmItemName();
+        String imageStr = mNutritionist_items.get(position).getmImageUriStrl();
+
+        Uri imageUri = Uri.parse(imageStr);
+
+        myViewHolder.mTitle.setText(title);
 
         Glide
                 .with(mContext)
-                .load(mContext.getDrawable(imageID)).into(myViewHolder.mImage);
-        myViewHolder.mTitle.setText(title);
-
+                .load(imageUri)
+                .into(myViewHolder.mImage);
     }
 
     @Override
@@ -64,10 +69,7 @@ public class Nutritionist_adaptor  extends RecyclerView.Adapter<Nutritionist_ada
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             mTitle = itemView.findViewById(R.id.nut_title);
-
             mImage = itemView.findViewById(R.id.nut_imgv);
-
-
         }
     }
 }

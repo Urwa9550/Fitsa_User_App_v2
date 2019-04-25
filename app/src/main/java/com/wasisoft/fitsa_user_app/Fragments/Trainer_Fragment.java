@@ -22,6 +22,8 @@ public class Trainer_Fragment extends Fragment {
 //     private LinearLayout lay;
 
 
+
+
     public Trainer_Fragment() {
         // Required empty public constructor
     }
@@ -31,7 +33,8 @@ public class Trainer_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.exercise_fragment, container, false);
+        View view= inflater.inflate(R.layout.trainer_fragment, container, false);
+
 
 
 //        mRecyclerView = view.findViewById(R.id.both_rv);

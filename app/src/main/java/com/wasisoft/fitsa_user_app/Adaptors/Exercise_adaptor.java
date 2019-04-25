@@ -1,6 +1,7 @@
 package com.wasisoft.fitsa_user_app.Adaptors;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.wasisoft.fitsa_user_app.Details_tr_nu;
 import com.wasisoft.fitsa_user_app.Model.Exercise_items;
 import com.wasisoft.fitsa_user_app.R;
 
@@ -54,7 +56,7 @@ public class Exercise_adaptor extends RecyclerView.Adapter<Exercise_adaptor.MyVi
         return mExercise_items.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private ImageView mImage;
         private TextView mTitle;
@@ -65,8 +67,13 @@ public class Exercise_adaptor extends RecyclerView.Adapter<Exercise_adaptor.MyVi
             mTitle = itemView.findViewById(R.id.ex_title);
             mDesc = itemView.findViewById(R.id.ex_desc);
             mImage = itemView.findViewById(R.id.ex_imgv);
+            itemView.setOnClickListener(this);
+        }
 
-
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(mContext, Details_tr_nu.class);
+            mContext.startActivity(intent);
         }
     }
 
