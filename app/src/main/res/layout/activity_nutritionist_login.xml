@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".User_login">
+    tools:context=".NutritionistLoginActivity">
 
     <TextView
         android:id="@+id/page_title"
@@ -83,7 +84,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Continue as Nutritionist?"
+        android:text="Continue as User?"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/signup_tv"
         app:layout_constraintStart_toStartOf="parent"

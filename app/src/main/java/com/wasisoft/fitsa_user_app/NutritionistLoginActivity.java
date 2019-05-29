@@ -18,7 +18,7 @@ import com.wasisoft.fitsa_user_app.Helpers.FieldHelper;
 
 import java.util.Objects;
 
-public class User_login extends AppCompatActivity {
+public class NutritionistLoginActivity extends AppCompatActivity {
 
     private Button login_btn;
     private TextView page_title, signup, nutri_login;
@@ -33,7 +33,7 @@ public class User_login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_login);
+        setContentView(R.layout.activity_nutritionist_login);
 
         initViews();
         initRef();
@@ -45,7 +45,7 @@ public class User_login extends AppCompatActivity {
         super.onStart();
 
         if (mCurrentUser != null) {
-            FieldHelper.moveTo(User_login.this, MainActivity.class);
+            FieldHelper.moveTo(NutritionistLoginActivity.this, NutritionistHomeActivity.class);
             finish();
         }
     }
@@ -63,7 +63,7 @@ public class User_login extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(User_login.this, UserSignup.class);
+                Intent intent = new Intent(NutritionistLoginActivity.this, NutritionistRegistrationActivity.class);
                 startActivity(intent);
             }
         });
@@ -80,7 +80,7 @@ public class User_login extends AppCompatActivity {
         nutri_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(User_login.this, NutritionistLoginActivity.class);
+                Intent intent = new Intent(NutritionistLoginActivity.this, User_login.class);
                 startActivity(intent);
                 finish();
             }
@@ -99,12 +99,12 @@ public class User_login extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            FieldHelper.displayToast(User_login.this,"Login Successful!");
+                            FieldHelper.displayToast(NutritionistLoginActivity.this,"Login Successful!");
 
-                            FieldHelper.moveTo(User_login.this, MainActivity.class);
+                            FieldHelper.moveTo(NutritionistLoginActivity.this, NutritionistHomeActivity.class);
                             finish();
                         }else {
-                            FieldHelper.displayToast(User_login.this,"Login Failed "+ Objects.requireNonNull(task.getException()).getMessage());
+                            FieldHelper.displayToast(NutritionistLoginActivity.this,"Login Failed "+ Objects.requireNonNull(task.getException()).getMessage());
                         }
                     }
                 });

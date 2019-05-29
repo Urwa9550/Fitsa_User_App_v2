@@ -1,6 +1,6 @@
 package com.wasisoft.fitsa_user_app.Model;
 
-public class Trainer_items  extends GeneralUser {
+public class Trainer_items {
     private String mItemName;
     private int mItemImages;
 

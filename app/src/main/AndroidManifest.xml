@@ -9,10 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ClientProfileActivity"></activity>
+        <activity android:name=".UserTypeActivity"></activity>
+        <activity android:name=".NutritionistLoginActivity" />
+        <activity android:name=".NutritionistHomeActivity" />
+        <activity android:name=".NutritionistRegistrationActivity" />
+        <activity android:name=".NutritionistProfile"
+            android:parentActivityName=".NutritionistHomeActivity"
+            />
+        <activity android:name=".Nutritionist_Signup" />
+        <activity android:name=".ClientProfileActivity" />
         <activity android:name=".Details_tr_nu" />
         <activity
-            android:name=".Signup"
+            android:name=".UserSignup"
             android:parentActivityName=".User_login" />
         <activity android:name=".User_login" />
         <activity android:name=".MainActivity" />

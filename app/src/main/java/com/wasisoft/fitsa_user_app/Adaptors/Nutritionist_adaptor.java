@@ -18,7 +18,7 @@ import com.wasisoft.fitsa_user_app.R;
 
 import java.util.List;
 
-public class Nutritionist_adaptor  extends RecyclerView.Adapter<Nutritionist_adaptor.MyViewHolder> {
+public class Nutritionist_adaptor extends RecyclerView.Adapter<Nutritionist_adaptor.MyViewHolder> {
 
     private Context mContext;
     private List<Nutritionist_items> mNutritionist_items;
@@ -45,7 +45,7 @@ public class Nutritionist_adaptor  extends RecyclerView.Adapter<Nutritionist_ada
         String title = mNutritionist_items.get(position).getmItemName();
         String imageStr = mNutritionist_items.get(position).getmImageUriStrl();
 
-        Uri imageUri = Uri.parse(imageStr);
+        Uri imageUri = (Uri) Uri.parse(imageStr);
 
         myViewHolder.mTitle.setText(title);
 

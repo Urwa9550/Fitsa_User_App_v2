@@ -13,4 +13,8 @@ public class Keys {
     public static final String EXPERIENCE_KEY = "Experience";
     public static final String IMAGE_KEY = "Image";
 
+    // Firebase Storage Keys
+    public static final String PROFILE_IMAGE_KEY = "Profile";
+
+
 }

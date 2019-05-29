@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "370591267285-de26espbngdgaojtnehc33pk2gbgh2ck.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wasisoft.fitsa_user_app",
+            "certificate_hash": "ed443268de5da7b64e1d38becace3c3017cb8e19"
+          }
+        },
+        {
           "client_id": "370591267285-50k20h8pmj4cf8c9oe17m1ls1thm98dl.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -29,11 +37,10 @@
       ],
       "api_key": [
         {
-          "current_key": ""
+          "current_key": "AIzaSyBC28KuyL7mmkf15DOr2tuiTjNWnc9CUkE"
         }
       ],
       "services": {
-
         "appinvite_service": {
           "other_platform_oauth_client": [
             {

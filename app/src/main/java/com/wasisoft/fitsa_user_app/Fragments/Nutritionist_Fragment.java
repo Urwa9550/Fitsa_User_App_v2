@@ -49,29 +49,12 @@ public class Nutritionist_Fragment extends Fragment
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.nutritionist_fragment, container, false);
 
-//        mRecyclerView = view.findViewById(R.id.both_rv);
-//        myItemsList = new ArrayList<>();
-//
-//        myItemsList.add(new MyItems("Ben 10",R.drawable.ben));
-//        myItemsList.add(new MyItems("Boruto Uzumaki",R.drawable.boruto));
-//        myItemsList.add(new MyItems("Jun Kazama",R.drawable.jun));
-//        myItemsList.add(new MyItems("Micky",R.drawable.micky));
-//        myItemsList.add(new MyItems("Tyson",R.drawable.tyson));
-//        myItemsList.add(new MyItems("Spidy",R.drawable.spidy));
-//        myItemsList.add(new MyItems("Pooh",R.drawable.pooh));
-//        myItemsList.add(new MyItems("Toon",R.drawable.toon));
-//
-//        mAdapter = new MyRecyclerViewAdapter(getContext(), myItemsList);
-//
-//        mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-//        mRecyclerView.setAdapter(mAdapter);
         return view;
     }
-
+//after onCreateView, onViewCreated is implemented (onViewCreated optional)
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
 
         initViews(view);
         initRef();

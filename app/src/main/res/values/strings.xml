@@ -24,4 +24,16 @@
     <string name="rating">Rating</string>
     <string name="subscribe">Subscribe</string>
     <string name="logo_desc">Mr. fitsa</string>
+    <string name="continue_as_nutritionist">Continue As Nutritionist?</string>
+    <string name="name_hint">name</string>
+    <string name="qualification_hint">qualification</string>
+    <string name="experience_hint">6 months, 1 year</string>
+    <string name="institute_hint">institute</string>
+    <string name="submit_nutri_btn">Submit</string>
+    <string name="nutri_update_profile_btn">Update</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="close_drawer">Close</string>
+    <string name="open_drawer">Open</string>
+    <string name="user">User</string>
 </resources>

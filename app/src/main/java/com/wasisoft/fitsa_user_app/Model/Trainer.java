@@ -1,19 +1,13 @@
 package com.wasisoft.fitsa_user_app.Model;
 
-import android.net.Uri;
-
-public class Nutritionist_items extends GeneralUser {
+public class Trainer extends GeneralUser {
 
     private String mItemName, mQualification, mInstitute;
     private String mExperience;
     private String uid;
     private String mImageUriStrl;
 
-    public Nutritionist_items() {
-        super();
-    }
-
-    public Nutritionist_items(String mItemName, String mQualification, String mInstitute, String mExperience, String mImageUriStrl, String uid) {
+    public Trainer(String mItemName, String mQualification, String mInstitute, String mExperience, String mImageUriStrl,String uid) {
 
         super(mItemName, mQualification, mInstitute, mExperience, mImageUriStrl, uid);
 
@@ -25,7 +19,6 @@ public class Nutritionist_items extends GeneralUser {
         this.uid = uid;
 
     }
-
 
     public String getmItemName() {
         return mItemName;
@@ -74,5 +67,6 @@ public class Nutritionist_items extends GeneralUser {
     public void setgetUid(String uid) {
         this.uid = uid;
     }
+
 
 }
